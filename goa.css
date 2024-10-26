@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+
+/* Global Styles */
+.first{
+    background-color: #333;
+    color:white;
+    margin: 0%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+   
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Goa Card Container */
+.goa-card-container {
+    padding: 30px;
+    background-color: #333;
+}
+
+.goa-card-heading {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.goa-card-description {
+    font-size: 1.1em;
+    color:white;
+    margin-bottom: 30px;
+}
+
+/* Image Section */
+.goa-card-image {
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.goa-card-image img {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+/* Video Section */
+.goa-video-container {
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 35px;
+    border-radius: 20px;
+}
+
+.goa-video-container iframe {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .goa-card-image, .d-flex.flex-row {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .goa-card-image img,
+    .goa-video-container {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+}
